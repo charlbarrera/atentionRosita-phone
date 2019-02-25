@@ -13,6 +13,7 @@ import { WebBrowser } from 'expo';
 import { MonoText } from '../components/StyledText';
 
 import { Button } from 'react-native-elements';
+// import LinearGradient from 'react-native-linear-gradient';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -42,8 +43,7 @@ export default class HomeScreen extends React.Component {
           <Text onPress={()=>this.setState({showLove: !this.state.showLove})}> Oprimeme rosita! </Text>
           {this.state.showLove ? (<Text>Te amoooooooo</Text>) : (<Text></Text>)}
           </View>
-          <Button title="Oprimeme Rosita!" 
-                color="white" />
+          <Button title="Oprimeme Rosita!" />
         </ScrollView>
 
         <View style={styles.tabBarInfoContainer}>
