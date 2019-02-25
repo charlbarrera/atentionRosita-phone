@@ -5,6 +5,7 @@ import AppNavigator from './navigation/AppNavigator';
 import HomeScreen from './screens/HomeScreen';
 import { createDrawerNavigator, createAppContainer } from 'react-navigation';
 
+<<<<<<< HEAD
 
 const MenuDrawerNavigation = createDrawerNavigator({
   HomeScreen: {
@@ -15,6 +16,18 @@ const MenuDrawerNavigation = createDrawerNavigator({
   }  
 }) 
 const AppContainer = createAppContainer(MenuDrawerNavigation);
+=======
+const AppContainer = createAppContainer(MenuDrawerNavigation);
+
+const MenuDrawerNavigation = createDrawerNavigator({
+  HomeScreen: {
+     screen: HomeScreen,
+     navigationOptions: {
+       title: 'Home Screen'
+     } 
+    }  
+}) 
+>>>>>>> 50624ba4bd1abe3b9e244a6fca5a10f8c087c79a
 
 export default class App extends React.Component {
   state = {
@@ -36,7 +49,10 @@ export default class App extends React.Component {
         <View style={styles.container}>
           {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
           <AppContainer />
+<<<<<<< HEAD
           <Text>hello carlos</Text>
+=======
+>>>>>>> 50624ba4bd1abe3b9e244a6fca5a10f8c087c79a
         </View>
       );
     }

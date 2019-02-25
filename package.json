@@ -15,8 +15,12 @@
     "expo": "^31.0.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+<<<<<<< HEAD
     "react-native-elements": "^1.1.0",
     "react-native-linear-gradient": "^2.5.3",
+=======
+    "react-native-elements": "^0.19.1",
+>>>>>>> 50624ba4bd1abe3b9e244a6fca5a10f8c087c79a
     "react-navigation": "^3.3.0"
   },
   "devDependencies": {
